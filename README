@@ -1,0 +1,37 @@
+hi all, this is justin
+
+link to lab slides:
+https://docs.google.com/presentation/d/1nAlJP9Ut2O8DkE2HJ06zx6BK7cOHi7_7IcwTB-IxVJ4/edit#slide=id.p23
+
+first, create your own branch. name it your uniqname. you can refer to the git tutorial i wrote in the slides back at the start of the semester. after you've created it, switch into it.
+
+please follow instructions starting on slide 23 for setup!
+this will set up your python virtual environment.
+to exit out of an environment, just enter "deactivate" into the terminal.
+
+run "python3 serverside_demo.py" to start up the script. you'll see that the terminal returns output similar to this:
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.178:8000
+
+copy either of the last two addresses in the output into your browser.
+from here, you can hit any of the routes defined in "serverside_demo.py". 
+for example, you can visit:
+
+http://192.168.1.178:8000/u/ccjustin/
+
+to see the HTML returned by that route. observe the terminal's output after you hit this route.
+
+task : 
+1. create your own route in serverside_demo.py that returns HTML containing some things about you.
+- uniqname
+- where you're from
+- talk about something you like to do :D have fun with it
+
+2. check out sessions_demo.py
+run it with "python3 sessions_demo.py", and try to understand how the routes are communicating with 
+each other in this file. note that a couple of them only receive POST requests!
+
+
+
+
